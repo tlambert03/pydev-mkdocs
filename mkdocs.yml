@@ -74,6 +74,10 @@ markdown_extensions:
 plugins:
     - search
     - tags
+    - spellcheck:
+          backends: # the backends you want to use
+              - codespell: # or nested configs
+                    dictionaries: [clear, rare]
 
 extra_css:
     - stylesheets/extra.css
