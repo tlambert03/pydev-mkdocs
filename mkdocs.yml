@@ -1,0 +1,73 @@
+site_name: PyDev for Science
+repo_url: https://github.com/pydev-guide/pydev-guide.github.io
+repo_name: pydev-guide
+edit_uri: edit/main/docs/
+
+watch:
+    - docs
+
+theme:
+    name: material
+    logo: assets/flask_logo.svg
+    favicon: images/flask_logo.svg
+    font: false
+    custom_dir: docs/overrides
+    palette:
+        # Palette toggle for light mode
+        - scheme: default
+          toggle:
+              icon: material/toggle-switch-off-outline
+              name: Switch to dark mode
+
+        # Palette toggle for dark mode
+        - scheme: slate
+          toggle:
+              icon: material/toggle-switch
+              name: Switch to light mode
+    icon:
+        repo: fontawesome/brands/github
+        edit: material/pencil
+    features:
+        - content.code.copy
+        - content.code.annotate
+        - content.action.edit
+        - navigation.footer
+        # - navigation.instant
+        - navigation.tracking
+
+extra:
+    social:
+        - icon: fontawesome/brands/github
+          link: https://github.com/pydev-guide/pydev-guide.github.io
+    generator: false
+
+markdown_extensions:
+    - attr_list
+    - admonition
+    - pymdownx.inlinehilite
+    - pymdownx.snippets
+    - pymdownx.superfences
+    - pymdownx.superfences
+    - pymdownx.keys
+    - pymdownx.details
+    - pymdownx.highlight:
+          anchor_linenums: true
+          line_spans: __span
+          pygments_lang_class: true
+    - pymdownx.emoji:
+          emoji_index: !!python/name:materialx.emoji.twemoji
+          emoji_generator: !!python/name:materialx.emoji.to_svg
+    - pymdownx.tabbed:
+          alternate_style: true
+    - toc:
+          permalink: "#"
+
+plugins:
+    - search
+    - tags
+
+extra_css:
+    - stylesheets/extra.css
+
+extra_javascript:
+    - javascripts/extra.js
