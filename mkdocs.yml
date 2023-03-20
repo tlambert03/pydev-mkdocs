@@ -1,4 +1,4 @@
-site_name: PyDev for Science
+site_name: pydev-guide
 repo_url: https://github.com/pydev-guide/pydev-guide.github.io
 repo_name: pydev-guide
 edit_uri: edit/main/docs/
@@ -14,15 +14,21 @@ theme:
     custom_dir: docs/overrides
     palette:
         # Palette toggle for light mode
-        - scheme: default
+        - media: "(prefers-color-scheme: light)"
+          scheme: default
+          primary: blue grey
+          accent: indigo
           toggle:
-              icon: material/toggle-switch-off-outline
+              icon: octicons/moon-24
               name: Switch to dark mode
 
         # Palette toggle for dark mode
-        - scheme: slate
+        - media: "(prefers-color-scheme: dark)"
+          scheme: slate
+          primary: orange
+          accent: amber
           toggle:
-              icon: material/toggle-switch
+              icon: octicons/sun-24
               name: Switch to light mode
     icon:
         repo: fontawesome/brands/github
@@ -34,6 +40,9 @@ theme:
         - navigation.footer
         # - navigation.instant
         - navigation.tracking
+        - search.highlight
+        - search.share
+        - search.suggest
 
 extra:
     social:

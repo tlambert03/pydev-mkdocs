@@ -1,4 +1,4 @@
-# Guide to Python Tooling for Scientists
+# Python Tooling for Scientists
 
 🚧 **Coming Soon!** 🚧
 
